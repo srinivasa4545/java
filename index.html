@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandavya First Grade College - Complaint System</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #2c3e50;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #f1c40f;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    height: 350px;
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2a5298;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #1e3c72;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mandavya First Grade College</h1>
+    <p>Online Complaint Management System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="complaint.html">Register</a>
+    <a href="status.html">Status</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to Complaint Portal</h1>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Register Complaint</h2>
+        <p>Submit your issues easily through our online system.</p>
+        <a href="complaint.html" class="btn">Register</a>
+    </div>
+
+    <div class="card">
+        <h2>Track Status</h2>
+        <p>Check the status of your complaint anytime.</p>
+        <a href="status.html" class="btn">Check Status</a>
+    </div>
+
+    <div class="card">
+        <h2>Quick Help</h2>
+        <p>Contact admin for urgent issues or support.</p>
+        <a href="contact.html" class="btn">Contact</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Mandavya First Grade College</p>
+</footer>
+
+</body>
+</html>

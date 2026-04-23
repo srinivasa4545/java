@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="dept" required>
+            <option value="">Select Department</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>BA</option>
+            <option>BCom</option>
+        </select>
+
+        <input type="password" id="password" placeholder="Password" required>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script>
+function validateForm() {
+    let pass = document.getElementById("password").value;
+    let confirmPass = document.getElementById("confirmPassword").value;
+
+    if(pass !== confirmPass) {
+        alert("Passwords do not match!");
+        return false;
+    }
+
+    alert("Registration Successful!");
+    return true;
+}
+</script>
+
+</body>
+</html>
